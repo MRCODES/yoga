@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ContactForm = () => {
+const SignUpForm = () => {
 
 
 
@@ -39,4 +39,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default SignUpForm;

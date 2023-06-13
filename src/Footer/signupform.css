@@ -1,0 +1,102 @@
+ .contact-container {
+     position: absolute;
+     top: 62%;
+     right: 5em;
+ }
+
+ #contact {
+     padding: .1em 1em;
+     /*box-shadow: 0 0 10px 0 lightgrey;
+    */
+     background-color: white;
+     opacity: 85%;
+     border-radius: 10px;
+ }
+
+ #contact h3 {
+     font-size: 30px;
+     font-weight: 700;
+     color: gold;
+     text-align: center;
+     height: 10px;
+ }
+
+ fieldset {
+     border: medium none !important;
+     text-align: center;
+ }
+
+ #contact input[type="email"] {
+     border: 2px solid #e9eaf2;
+     background: #f6f6f9;
+     height: 30px;
+     border-radius: 6px;
+     width: 200px;
+ }
+
+ #contact input[type="email"]:hover #contact textarea:hover {
+     -webkit-transition: border-color 0.3s ease-in-out;
+     -moz-transition: border-color 0.3s ease-in-out;
+     transition: border-color 0.3s ease-in-out;
+     border: 1px solid #aaa;
+ }
+
+ #contact button[type="submit"] {
+     cursor: pointer;
+     border: none;
+     color: fff;
+     padding: 10px;
+     font-size: 15px;
+     font-weight: 700;
+     border-radius: 5px;
+     background: #ef3934;
+ }
+
+ #contact button[type="submit"]:hover {
+     background: aquamarine;
+     -webkit-transition: background 0.8s ease;
+     -moz-transition: background 0.8s ease;
+     transition: background-color 0.8s ease;
+ }
+
+ #contact button[type="submit"]:active {
+     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+ }
+
+ #contact input:focus,
+ #contact textarea:focus {
+     outline: 0;
+     border: 2px solid yellow;
+ }
+
+ ::-webkit-input-placeholder {
+     color: #888;
+     font-size: 1.3rem;
+     padding: 1px 1rem 0;
+     -webkit-font-smoothing: antialiased;
+ }
+
+ :-moz-placeholder {
+     color: #888;
+ }
+
+ ::-moz-placeholder {
+     color: #888;
+ }
+
+ :-ms-input-placeholder {
+     color: #888;
+ }
+
+ #contact input[type="email"] #contact button[type="submit"] {
+     font: 500 13px/16px "Roboto", Helvetica, Arial, sans-serif;
+ }
+
+ /*MEDIA QUERIES*/
+ @media screen and (max-width: 320px) {
+     .contact-container {
+         position: absolute;
+         top: 62%;
+         right: 8%;
+     }
+ }

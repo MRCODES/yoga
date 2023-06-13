@@ -1,0 +1,209 @@
+/* ============================================== |||||||||||| N A V I G A T I O N |||||||||||| ============================================== */
+/* Description: The navigation is it's own "private" grid with 3 column sections in it's 1 row) */
+
+
+
+/* ============================================== |||||||||||| NAV |||||||||||| ============================================== */
+.navigation-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.toggle {
+    display: none;
+    place-items: center;
+    width: 100%;
+    color: black;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.toggle img {
+    filter: invert();
+    width: 30px;
+    z-index: 100;
+}
+
+.nav-links-container {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.085);
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mobile-nav-links-container {
+    display: none;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.043);
+    margin: 0;
+    transition: .8s;
+}
+
+.nav-links-container ul,
+.mobile-nav-links-container ul {
+    display: flex;
+    width: 100%;
+}
+
+.nav-links-container li,
+.mobile-nav-links-container li {
+    display: flex;
+    padding: 0 5%;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-links-container a,
+.mobile-nav-links-container a {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transform: scale(.9, .9);
+}
+
+.nav-links-container a:hover {
+    color: rgb(224, 185, 185);
+}
+
+/* ============================================== |||||||||||| NAV SOCIAL MEDIA ICONS |||||||||||| ============================================== */
+.nav-social-icons {
+    width: 100%;
+    height: 100%;
+    margin-left: -3%;
+    margin-top: 3%;
+    z-index: 2;
+}
+
+.nav-social-icons ul {
+    display: flex;
+    float: right;
+}
+
+.nav-social-icons li {
+    display: inline-block;
+    padding: 1%;
+}
+
+.nav-social-icons a {
+    display: inline-block;
+}
+
+.nav-social-icons img {
+    width: 1.2em;
+}
+
+.nav-social-icons a:hover {
+    filter: invert(100%);
+    border-bottom: none;
+    transition: none;
+}
+
+/* ============================================== |||||||||||| E N D |||||||||||| ============================================== */
+/*MEDIA QUERIES*/
+@media screen and (max-width: 320px) {
+    .toggle img {
+        filter: invert();
+        width: 40px;
+        z-index: 100;
+    }
+
+    .logo-container {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        right: 40%;
+        top: -16%;
+    }
+
+    .nav-social-icons {
+        display: none;
+    }
+
+    .logo-well {
+        height: 200%;
+        position: relative;
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .nav-links-container {
+        display: none;
+    }
+
+    .mobile-nav-links-container {
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+        height: 400px;
+        width: 100%;
+        background-color: white;
+        margin: 0;
+        margin-top: 6%;
+        animation: faded ease-in 300ms 1;
+    }
+
+    @keyframes faded {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .mobile-nav-links-container ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .mobile-nav-links-container li {
+        display: flex;
+        padding: 5% 5%;
+        align-items: center;
+        margin: auto;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.211);
+        height: 100%;
+    }
+
+    /* .mobile-nav-links-container li:hover {
+         background-color: #fff;
+         transition: .2s;
+         color: red;
+    }
+     */
+    .mobile-nav-links-container a {
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mobile-nav-links-container a:hover {
+        color: red;
+        transition: .5s;
+    }
+
+    .toggle {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        color: white;
+    }
+}

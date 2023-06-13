@@ -1,0 +1,48 @@
+ /* ============================================== |||||||||||| FOOTER |||||||||||| ============================================== */
+ .footer-part-one {
+     display: grid;
+     grid-template-rows: auto;
+     grid-template-columns: auto;
+     place-items: center;
+     padding: 3%;
+     margin: 0;
+     color: #fff;
+     height: 100%;
+     background-color: #1e1f20;
+ }
+
+ #join-us {
+     grid-column: auto;
+
+ }
+
+ .footer-part-one p {
+     font-size: .8em;
+ }
+
+ .footer-part-one h2 {
+     font-size: 2.1em;
+ }
+
+ #well-footer img {
+     width: 50%;
+     opacity: .9;
+     filter: invert();
+ }
+
+ #contact-form {
+     background-color: #4b424252;
+     padding: 10%;
+     width: 200px;
+     border-radius: 5%;
+     box-shadow: 1px 1px 5px 1px #000;
+ }
+
+ /* ============================== |||||||||||| END |||||||||||| ============================== */
+ @media screen and (max-width: 320px) {
+     .footer {
+         display: flex;
+         flex-direction: column;
+         padding: 20px;
+     }
+ }

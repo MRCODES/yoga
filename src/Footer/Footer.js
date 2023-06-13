@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactForm from './ContactForm';
+import SignUpForm from '../SignUpForm';
 import FooterLogo from './FooterLogo';
 import Address from './Address';
 
@@ -16,7 +16,7 @@ const Footer = () => {
                       
               <Address />
               <FooterLogo />
-              <ContactForm />
+              <SignUpForm />
                             
               <p>(This is a prototype project to showcase my skill level.)</p>
               
