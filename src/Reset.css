@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*line-height: 100%;
+    */
+    text-align: center;
+    text-decoration: none;
+    /*text-transform: uppercase;
+    */
+    list-style: none;
+    text-rendering: optimizeLegibility;
+    image-rendering: optimizeQuality;
+    /* user-select: none;
+     -webkit-user-select: none;
+     -webkit-touch-callout: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     */
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*border: 1px solid red;
+    */
+}
