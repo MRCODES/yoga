@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../../Navigation/NavBar';
 import Footer from './Footer';
+import 'src/pages/Team/team.css';
 
 const useTeam = () => {
 

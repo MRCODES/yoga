@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'src/Footer/SignUpForm.js';
 
 const SignUpForm = () => {
 

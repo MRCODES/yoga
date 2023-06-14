@@ -3,7 +3,7 @@ Tuesday, 5:40PM.
 Added images.
 
 
-TAKS
+TASKS
 
 Create:
 Convert image links from the new file location.

@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import 'src/Navigation/NavBar.js';
+
+
+
 
 const NavBar = () => {
   const [show, setShow] = useState(true);

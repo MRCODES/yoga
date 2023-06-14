@@ -2,6 +2,8 @@ import React from 'react';
 import SignUpForm from '../SignUpForm';
 import FooterLogo from './FooterLogo';
 import Address from './Address';
+import 'src/Footer/Footer.js';
+
 
 const Footer = () => {
 

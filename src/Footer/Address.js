@@ -1,4 +1,5 @@
 import React from 'react';
+import 'src/Footer/Footer.js';
 
 const Address = () => {
 

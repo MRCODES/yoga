@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../../Navigation/NavBar';
 import Footer from './Footer';
+import 'src/pages/Mission/mission.css'
 
 const useMission = () => {
 
